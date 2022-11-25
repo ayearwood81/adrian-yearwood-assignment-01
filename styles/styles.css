@@ -258,6 +258,7 @@ h2 {
 p,
 article {
   font-family: "Barlow", sans-serif;
+  color: #042259;
 }
 
 .wrapper {
@@ -394,8 +395,6 @@ header .wrapper .mainTitle p {
           align-items: center;
 }
 .smoothiesNewHome .smoothies .smoothieInfo {
-  width: 50%;
-  padding-right: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,8 +402,79 @@ header .wrapper .mainTitle p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 50%;
+  padding-right: 5%;
+}
+.smoothiesNewHome .smoothies .smoothieInfo h2 {
+  width: 75%;
+}
+.smoothiesNewHome .smoothies .smoothieInfo article {
+  line-height: 29px;
+  letter-spacing: 0.2px;
+  margin: 3% 0%;
+}
+.smoothiesNewHome .smoothies .smoothieInfo button {
+  background-color: #f5c8cf;
+  color: #042259;
+  border-width: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 29px;
+  padding: 10px 10px;
 }
 .smoothiesNewHome .smoothies img {
+  height: auto;
+  width: 50%;
+}
+.smoothiesNewHome .newHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.smoothiesNewHome .newHome .newHomeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 50%;
+  padding-left: 5%;
+}
+.smoothiesNewHome .newHome .newHomeInfo h2 {
+  width: 75%;
+}
+.smoothiesNewHome .newHome .newHomeInfo article {
+  line-height: 29px;
+  letter-spacing: 0.2px;
+  margin: 3% 0%;
+}
+.smoothiesNewHome .newHome .newHomeInfo button {
+  background-color: #f5c8cf;
+  color: #042259;
+  border-width: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 29px;
+  padding: 10px 10px;
+}
+.smoothiesNewHome .newHome img {
   height: auto;
   width: 50%;
 }

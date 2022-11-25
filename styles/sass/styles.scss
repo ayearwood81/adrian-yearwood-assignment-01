@@ -29,6 +29,7 @@ h2 {
 p,
 article {
     font-family: 'Barlow', sans-serif;
+    color: #042259;
 }
 .wrapper {
     max-width:1200px;
@@ -132,14 +133,66 @@ header {
         display:flex;
         align-items: center;
         .smoothieInfo {
-            width:50%;
-            padding-right: 2%;
             display:flex;
             flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+            width:50%;
+            padding-right: 5%;
+            h2 {
+                width:75%;
+            }
+            article {
+                line-height: 29px;
+                letter-spacing: 0.2px;
+                margin: 3% 0%;
+            }
+            button {
+                background-color: #f5c8cf;
+                color:#042259;
+                border-width: 0;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 29px;
+                padding: 10px 10px;
+            }
         }
         img {
             height:auto;
+            width: 50%;
+        }
+    }
+    .newHome {
+        display:flex;
+        align-items: center;
+        .newHomeInfo {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:baseline;
             width:50%;
+            padding-left: 5%;
+            h2 {
+                width:75%;
+            }
+            article {
+                line-height: 29px;
+                letter-spacing: 0.2px;
+                margin: 3% 0%;
+            }
+            button {
+                background-color: #f5c8cf;
+                color:#042259;
+                border-width: 0;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 29px;
+                padding: 10px 10px;
+            }
+        }
+        img {
+            height:auto;
+            width: 50%;
         }
     }
 }
