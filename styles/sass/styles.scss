@@ -1,0 +1,78 @@
+@use 'setup';
+
+html {
+    font-size: 125%;
+}
+body,
+section,
+ul,
+h1,
+h2,
+h3 {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+button,
+a {
+    font-family: 'Emblema One', cursive;
+    color: #1d81cc;
+    text-transform: uppercase;
+}
+p,
+article {
+    font-family: 'Barlow', sans-serif;
+}
+.wrapper {
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+}
+header {
+    background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt.png);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    .topLinks {
+        display:flex;
+        justify-content: flex-end;
+        padding: 1% 0%;
+        ul {
+            width:40%;
+            display:flex;
+            justify-content: center;
+            li {
+                display:inline-block;
+                margin: 0 4%;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    font-family: 'Catamaran', sans-serif;
+                    color:#042259;
+                }
+            }
+        }
+    }
+    aside {
+        position:absolute;
+        top:5%;
+        right:5%;
+        li {
+            margin:10px 0px;
+        }
+    }
+    .wrapper {
+        position:relative;
+        .mainTitle {
+            position:absolute;
+            top:40vh;
+            left:0;
+        }
+    }
+}
