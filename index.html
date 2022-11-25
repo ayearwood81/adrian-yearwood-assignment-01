@@ -18,15 +18,15 @@
             <section class="topNav">
                 <nav class="topLinks">
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </section>
             <section class="mainTitle">
-                <h1>electric select</h1>
+                <h1 id="home">electric select</h1>
                 <p>best home appliances</p>
             </section>
         </div>
@@ -34,22 +34,22 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com" target="_blank">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.snapchat.com" target="_blank">
                             <i class="fa-brands fa-snapchat"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.twitter.com" target="_blank">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
@@ -60,7 +60,7 @@
     <main>
         <section class="newsAppliances">
             <div class="wrapper">
-                <h2>news appliances</h2>
+                <h2 id="about">news appliances</h2>
                 <ul class="appliancePics">
                     <li>
                         <img src="./assets/gallery-photo-1.jpg" alt="microwave">
@@ -86,7 +86,7 @@
             <div class="wrapper">
                 <div class="smoothies">
                     <div class="smoothieInfo">
-                        <h2>smoothies anyone?</h2>
+                        <h2 id="blog">smoothies anyone?</h2>
                         <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint sequi aliquam placeat maxime exercitationem, dignissimos officia alias sit dolorum. Similique, aliquid esse delectus vero corporis dolorem quasi tenetur ab?</article>
                         <button>read more</button>
                     </div>
@@ -120,36 +120,39 @@
                 </ul>
             </nav>
         </section>
-        <section class="contact">
+        <section class="contactOptions">
             <div class="wrapper">
-                <div class="subscribe">
-                    <h3>stay updated</h3>
-                    <p>Subscribe to our newsletter to stay updated</p>
-                    <form action="#" class="Subscribe" name="Subscribe">
-                        <label for="email">Email</label>
-                        <input id="email" type="email">
-                    </form>
+                <div class="bottomFlex">
+                    <div class="stayUpdated">
+                        <h3>stay updated</h3>
+                        <p>Subscribe to our newsletter to stay updated.</p>
+                        <form action="#" class="subscribe" name="subscribe">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="email address">
+                            <button type="submit">subscribe</button>
+                        </form>
+                    </div>
+                    <div class="contact">
+                        <h3 id="contact">contact</h3>
+                        <p>info@email.com 123 - 456 - 7890<br>
+                        123 some road, Toronto, ON<br>
+                        A5A 5A5, Canada</p>
+                    </div>
+                    <ul class="bottomLinks">
+                        <li>
+                            <a href="#home">home</a>
+                        </li>
+                        <li>
+                            <a href="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="contact">
-                    <h3>contact</h3>
-                    <p>info@email.com 123 - 456 - 7890<br>
-                    123 some road, Toronto, ON<br>
-                    A5A 5A5, Canada</p>
-                </div>
-                <ul class="bottomLinks">
-                    <li>
-                        <a href="#">home</a>
-                    </li>
-                    <li>
-                        <a href="#">about</a>
-                    </li>
-                    <li>
-                        <a href="#">blog</a>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                </ul>
             </div>
         </section>
     </main>

@@ -249,6 +249,7 @@ a {
   font-family: "Emblema One", cursive;
   color: #1d81cc;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 h2 {
@@ -258,11 +259,11 @@ h2 {
 p,
 article {
   font-family: "Barlow", sans-serif;
-  color: #042259;
+  color: #1f2022;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1600px;
   width: 90%;
   margin: 0 auto;
 }
@@ -359,7 +360,14 @@ header .wrapper .mainTitle p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5% 0%;
+}
+.newsAppliances .coffee img {
+  width: 25%;
+  height: auto;
 }
 .newsAppliances .coffee .coffeeInfo {
   display: -webkit-box;
@@ -380,6 +388,18 @@ header .wrapper .mainTitle p {
 }
 .newsAppliances .coffee .coffeeInfo h2 {
   margin: 0;
+}
+.newsAppliances .coffee .coffeeInfo article {
+  margin: 2% 0%;
+}
+.newsAppliances .coffee button {
+  background-color: #042259;
+  color: #f0f5ff;
+  border-width: 0px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 29px;
+  padding: 10px 10px;
 }
 
 .smoothiesNewHome {
@@ -508,9 +528,9 @@ header .wrapper .mainTitle p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -520,4 +540,64 @@ header .wrapper .mainTitle p {
 }
 .shopJobsEvents nav ul li a {
   text-decoration: none;
+  font-size: 1.56rem;
+}
+
+.contactOptions {
+  background-color: #f0f5ff;
+  padding: 3% 0%;
+}
+.contactOptions p {
+  margin: 2% 0%;
+}
+.contactOptions .bottomFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactOptions .bottomFlex .stayUpdated {
+  width: 50%;
+}
+.contactOptions .bottomFlex .stayUpdated label[for=email] {
+  display: none;
+}
+.contactOptions .bottomFlex .stayUpdated input[type=email] {
+  line-height: 29px;
+  height: 49px;
+  margin-right: -5px;
+  border: 2px solid #f5c8cf;
+  width: 70%;
+}
+.contactOptions .bottomFlex .stayUpdated button {
+  background-color: #f5c8cf;
+  color: #042259;
+  width: 30%;
+  min-width: 140px;
+  border-width: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 29px;
+  padding: 10px 10px;
+}
+.contactOptions .bottomFlex .contact p {
+  margin-top: 5%;
+  line-height: 25px;
+}
+.contactOptions .bottomFlex li {
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 29px;
+}
+
+footer {
+  background-color: #042259;
+  text-align: center;
+  padding: 1% 0%;
+}
+footer p {
+  margin: 0;
+  color: #f0f5ff;
 }

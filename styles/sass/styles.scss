@@ -22,6 +22,7 @@ a {
     font-family: 'Emblema One', cursive;
     color: #1d81cc;
     text-transform: uppercase;
+    text-decoration: none;
 }
 h2 {
     font-size: 2.1rem;
@@ -29,10 +30,10 @@ h2 {
 p,
 article {
     font-family: 'Barlow', sans-serif;
-    color: #042259;
+    color: #1f2022;
 }
 .wrapper {
-    max-width:1200px;
+    max-width:1600px;
     width:90%;
     margin:0 auto;
 }
@@ -112,7 +113,12 @@ header {
     }
     .coffee {
         display:flex;
+        align-items: center;
         margin:5% 0%;
+        img {
+            width:25%;
+            height:auto;
+        }
         .coffeeInfo {
             display:flex;
             flex-direction: column;
@@ -123,6 +129,18 @@ header {
             h2 {
                 margin: 0;
             }
+            article {
+                margin: 2% 0%;
+            }
+        }
+        button {
+            background-color: #042259;
+            color: #f0f5ff;
+            border-width: 0px;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 29px;
+            padding: 10px 10px;
         }
     }
 }
@@ -211,15 +229,71 @@ header {
                 height:50%;
                 display:flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
                 i {
                     color: #042259;
                 }
                 a {
                     text-decoration: none;
+                    font-size: 1.56rem;
                 }
             }
         }
+    }
+}
+.contactOptions {
+    background-color: #f0f5ff;
+    padding:3% 0%;
+    p {
+        margin:2% 0%;
+    }
+    .bottomFlex {
+        display:flex;
+        justify-content: space-between;
+        .stayUpdated {
+            width:50%;
+            label[for="email"] {
+                display:none;
+            }
+            input[type="email"] {
+                line-height: 29px;
+                height:49px;
+                margin-right:-5px;
+                border:2px solid #f5c8cf;
+                width:70%;
+            }
+            button {
+                background-color: #f5c8cf;
+                color:#042259;
+                width:30%;
+                min-width: 140px;
+                border-width: 0;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 29px;
+                padding: 10px 10px;
+            }
+        }
+        .contact {
+            p {
+            margin-top: 5%;
+            line-height: 25px;
+            }
+        }
+        li {
+            text-align: right;
+            font-size: 1.2rem;
+            line-height: 29px;
+        }
+    }
+}
+footer {
+    background-color: #042259;
+    text-align: center;
+    padding:1% 0%;
+    p {
+        margin:0;
+        color: #f0f5ff;
     }
 }
