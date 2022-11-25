@@ -251,6 +251,10 @@ a {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 2.1rem;
+}
+
 p,
 article {
   font-family: "Barlow", sans-serif;
@@ -284,9 +288,9 @@ header .topLinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 header .topLinks ul li {
   display: inline-block;
@@ -314,4 +318,93 @@ header .wrapper .mainTitle {
   position: absolute;
   top: 40vh;
   left: 0;
+}
+header .wrapper .mainTitle h1 {
+  font-size: 5.23rem;
+  line-height: 87.3px;
+  width: 50%;
+}
+header .wrapper .mainTitle p {
+  color: #042259;
+  font-size: 1.86rem;
+  line-height: 37.9px;
+  margin: 0;
+}
+
+.newsAppliances {
+  background-color: #fcdde2;
+  padding: 1% 0%;
+}
+.newsAppliances h2 {
+  text-align: center;
+  margin: 5% 0%;
+}
+.newsAppliances .appliancePics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.newsAppliances .appliancePics li {
+  width: 31%;
+}
+.newsAppliances .appliancePics li img {
+  width: 100%;
+  height: auto;
+}
+.newsAppliances .coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% 0%;
+}
+.newsAppliances .coffee .coffeeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  margin-left: 2%;
+}
+.newsAppliances .coffee .coffeeInfo h2 {
+  margin: 0;
+}
+
+.smoothiesNewHome {
+  background-color: #f0f5ff;
+  height: auto;
+}
+.smoothiesNewHome .smoothies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.smoothiesNewHome .smoothies .smoothieInfo {
+  width: 50%;
+  padding-right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.smoothiesNewHome .smoothies img {
+  height: auto;
+  width: 50%;
 }

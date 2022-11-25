@@ -12,6 +12,7 @@ h3 {
     margin:0;
     padding:0;
     list-style: none;
+    
 }
 h1,
 h2,
@@ -21,6 +22,9 @@ a {
     font-family: 'Emblema One', cursive;
     color: #1d81cc;
     text-transform: uppercase;
+}
+h2 {
+    font-size: 2.1rem;
 }
 p,
 article {
@@ -45,7 +49,7 @@ header {
         ul {
             width:40%;
             display:flex;
-            justify-content: center;
+            justify-content: flex-end;
             li {
                 display:inline-block;
                 margin: 0 4%;
@@ -73,6 +77,69 @@ header {
             position:absolute;
             top:40vh;
             left:0;
+            h1 {
+                font-size:5.23rem;
+                line-height: 87.3px;
+                width:50%;
+            }
+            p {
+                color: #042259;
+                font-size:1.86rem;
+                line-height: 37.9px;
+                margin: 0;
+            }
+        }
+    }
+}
+.newsAppliances {
+    background-color: #fcdde2;
+    padding:1% 0%;
+    h2 {
+        text-align: center;
+        margin:5% 0%;
+    }
+    .appliancePics {
+        display:flex;
+        justify-content: space-between;
+        li {
+            width: 31%;
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+    .coffee {
+        display:flex;
+        margin:5% 0%;
+        .coffeeInfo {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width:75%;
+            margin-left:2%;
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}
+.smoothiesNewHome {
+    background-color: #f0f5ff;
+    height:auto;
+    .smoothies {
+        display:flex;
+        align-items: center;
+        .smoothieInfo {
+            width:50%;
+            padding-right: 2%;
+            display:flex;
+            flex-direction: column;
+        }
+        img {
+            height:auto;
+            width:50%;
         }
     }
 }
