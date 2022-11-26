@@ -274,6 +274,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 header .topLinks {
@@ -305,6 +306,9 @@ header .topLinks ul li a {
   font-family: "Catamaran", sans-serif;
   color: #042259;
 }
+header .dropMenu {
+  display: none;
+}
 header aside {
   position: absolute;
   top: 5%;
@@ -318,7 +322,7 @@ header .wrapper {
 }
 header .wrapper .mainTitle {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   left: 0;
 }
 header .wrapper .mainTitle h1 {
@@ -600,4 +604,245 @@ footer {
 footer p {
   margin: 0;
   color: #f0f5ff;
+}
+
+@media (max-width: 975px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  header {
+    background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+  }
+  header .wrapper .mainTitle {
+    top: 20vh;
+    left: 0;
+  }
+  header .wrapper .mainTitle h1 {
+    font-size: 3rem;
+    line-height: 65px;
+    width: 40%;
+  }
+  header .wrapper .mainTitle p {
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin: 0;
+  }
+  header aside {
+    display: none;
+  }
+  header .topNav {
+    position: relative;
+    /* turning top menu into drop menu ends */
+  }
+  header .topNav .topLinks {
+    display: none;
+  }
+  header .topNav .dropMenu {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 10px;
+    min-width: 100px;
+    text-align: center;
+  }
+  header .topNav .dropMenu img {
+    width: 50%;
+    color: #042259;
+  }
+  header .topNav .dropMenu .dropMenuLinks {
+    /* formatting and hiding the links */
+    display: none;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  header .topNav .dropMenu .dropMenuLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+  }
+  header .topNav .dropMenu:hover .dropMenuLinks {
+    /* displays the drop menu on a hover */
+    display: block;
+  }
+  .newsAppliances .appliancePics li {
+    width: 45%;
+    height: auto;
+  }
+  .newsAppliances .appliancePics .toaster {
+    display: none;
+  }
+  .newsAppliances .coffee {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsAppliances .coffee img {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .newsAppliances .coffee .coffeeInfo {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .smoothiesNewHome {
+    background-color: #fcdde2;
+  }
+  .smoothiesNewHome .smoothies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .smoothiesNewHome .smoothies img {
+    width: 111%;
+  }
+  .smoothiesNewHome .smoothies .smoothieInfo {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4% 0%;
+  }
+  .smoothiesNewHome .smoothies .smoothieInfo h2 {
+    text-align: center;
+  }
+  .smoothiesNewHome .smoothies .smoothieInfo button {
+    background-color: #042259;
+    color: #f0f5ff;
+    border-width: 0px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 29px;
+    padding: 10px 10px;
+  }
+  .smoothiesNewHome .newHome {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .smoothiesNewHome .newHome img {
+    width: 111%;
+  }
+  .smoothiesNewHome .newHome .newHomeInfo {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4% 0%;
+  }
+  .smoothiesNewHome .newHome .newHomeInfo h2 {
+    text-align: center;
+  }
+  .smoothiesNewHome .newHome .newHomeInfo button {
+    background-color: #042259;
+    color: #f0f5ff;
+    border-width: 0px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 29px;
+    padding: 10px 10px;
+  }
+  .shopJobsEvents {
+    height: auto;
+    padding: 5% 0%;
+    background-color: #f5c8cf;
+  }
+  .shopJobsEvents nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shopJobsEvents nav ul li {
+    margin: 5% 0%;
+  }
+  .shopJobsEvents nav ul li a {
+    margin: 20% 0%;
+  }
+  .contactOptions p {
+    font-size: 0.9rem;
+  }
+  .contactOptions .bottomFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .contactOptions .bottomFlex .stayUpdated {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactOptions .bottomFlex .stayUpdated .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contactOptions .bottomFlex .stayUpdated .subscribe input[type=email] {
+    text-align: center;
+    width: 100%;
+    margin: 2% 0%;
+  }
+  .contactOptions .bottomFlex .stayUpdated .subscribe button {
+    text-align: center;
+    width: 40%;
+    margin: 2% 0%;
+  }
+  .contactOptions .bottomFlex .contact {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+  }
+  .contactOptions .bottomFlex .bottomLinks {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 2% 0%;
+  }
+  footer {
+    padding: 3% 0%;
+  }
+}
+@media (max-width: 500px) {
+  header .wrapper .mainTitle h1 {
+    font-size: 2rem;
+    line-height: 42px;
+    width: 40%;
+  }
+  header .wrapper .mainTitle p {
+    font-size: 0.8rem;
+    line-height: 16px;
+    margin: 0;
+  }
+  .contact p {
+    font-size: 0.7rem;
+  }
+  .bottomLinks li a {
+    font-size: 1rem;
+  }
 }

@@ -43,6 +43,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position:relative;
     .topLinks {
         display:flex;
@@ -65,6 +66,9 @@ header {
             }
         }
     }
+    .dropMenu {
+        display:none;
+    }
     aside {
         position:absolute;
         top:5%;
@@ -77,7 +81,7 @@ header {
         position:relative;
         .mainTitle {
             position:absolute;
-            top:40vh;
+            top:35vh;
             left:0;
             h1 {
                 font-size:5.23rem;
@@ -295,5 +299,235 @@ footer {
     p {
         margin:0;
         color: #f0f5ff;
+    }
+}
+
+@media (max-width: 975px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    header {
+        background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+        .wrapper {
+            .mainTitle {
+                top:20vh;
+                left:0;
+                h1 {
+                    font-size: 3rem;
+                    line-height: 65px;
+                    width:40%;
+                }
+                p {
+                    font-size:1.2rem;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+        }
+        aside {
+            display:none;
+        }
+        .topNav {
+            position:relative;
+            .topLinks {
+                display:none;
+            }
+            .dropMenu {
+                position:absolute;
+                display: inline-block;
+                right:0px;
+                top:10px;
+                min-width:100px;
+                text-align: center;
+                img {
+                    width:50%;
+                    color:#042259;
+                }
+                .dropMenuLinks {
+                    /* formatting and hiding the links */
+                    display:none;
+                    position: relative;
+                    text-align:center;
+                    z-index: 1;
+                    a {
+                        color:#ffffff;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        display: block;
+                    }
+                }
+            }    
+            .dropMenu:hover {
+                .dropMenuLinks {
+                /* displays the drop menu on a hover */
+                display:block;
+                } 
+            }
+            /* turning top menu into drop menu ends */
+        }
+    }    
+    .newsAppliances {
+        .appliancePics {
+            li {
+                width:45%;
+                height:auto;
+            }
+            .toaster {
+                display:none;
+            }
+        }
+    }
+    .newsAppliances {
+        .coffee {
+            flex-direction: column;
+            img {
+                width:100%;
+                margin-bottom: 3%;
+            }
+            .coffeeInfo {
+                width:100%;
+                align-items: center;
+            }
+        }
+    }
+    .smoothiesNewHome {
+        background-color: #fcdde2;
+        .smoothies {
+            flex-direction: column-reverse;
+            img {
+                width: 111%;
+            }
+            .smoothieInfo {
+                width:100%;
+                align-items: center;
+                padding: 4% 0%;
+                h2 {
+                    text-align: center;
+                }
+                button {
+                    background-color: #042259;
+                    color: #f0f5ff;
+                    border-width: 0px;
+                    font-size: 1rem;
+                    text-align: center;
+                    line-height: 29px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+        .newHome {
+            flex-direction: column;
+            img {
+                width: 111%;
+            }
+            .newHomeInfo {
+                width:100%;
+                align-items: center;
+                padding: 4% 0%;
+                h2 {
+                    text-align: center;
+                }
+                button {
+                    background-color: #042259;
+                    color: #f0f5ff;
+                    border-width: 0px;
+                    font-size: 1rem;
+                    text-align: center;
+                    line-height: 29px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+    .shopJobsEvents {
+        height:auto;
+        padding:5% 0%;
+        background-color: #f5c8cf;
+        nav {
+            ul {
+                flex-direction: column;
+                li {
+                    margin: 5% 0%;
+                    a{
+                        margin:20% 0%;
+                    }
+                }
+            }
+        }
+    }
+    .contactOptions {
+        p {
+            font-size: 0.9rem;
+        }
+        .bottomFlex {
+            flex-direction: column;
+            align-items: center;
+            position:relative;
+            .stayUpdated {
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                .subscribe {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width:100%;
+                    input[type="email"] {
+                        text-align: center;
+                        width:100%;
+                        margin: 2% 0%;                        
+                    }
+                    button {
+                        text-align: center;
+                        width:40%;
+                        margin: 2% 0%;
+                    }
+                }
+            }
+            .contact {
+                position:absolute;
+                bottom:2%;
+                left:0;
+            }
+            .bottomLinks {
+                align-self: flex-end;
+                margin: 2% 0%;
+            }
+        }
+    }
+    footer {
+        padding: 3% 0%;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        .wrapper {
+            .mainTitle {
+                h1 {
+                    font-size: 2rem;
+                    line-height: 42px;
+                    width:40%;
+                }
+                p {
+                    font-size:0.8rem;
+                    line-height: 16px;
+                    margin: 0;
+                }   
+            }
+        }
+    }
+    .contact {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+    .bottomLinks {
+        li {
+            a {
+                font-size: 1rem;
+            }
+        }
     }
 }
