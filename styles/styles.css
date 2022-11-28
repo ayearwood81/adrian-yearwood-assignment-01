@@ -263,7 +263,6 @@ article {
 }
 
 .wrapper {
-  max-width: 1600px;
   width: 90%;
   margin: 0 auto;
 }
@@ -274,7 +273,6 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 header .topLinks {
@@ -433,6 +431,7 @@ header .wrapper .mainTitle p {
       -ms-flex-align: baseline;
           align-items: baseline;
   width: 50%;
+  margin-left: 5%;
   padding-right: 5%;
 }
 .smoothiesNewHome .smoothies .smoothieInfo h2 {
@@ -479,6 +478,7 @@ header .wrapper .mainTitle p {
       -ms-flex-align: baseline;
           align-items: baseline;
   width: 50%;
+  margin-right: 5%;
   padding-left: 5%;
 }
 .smoothiesNewHome .newHome .newHomeInfo h2 {
@@ -612,6 +612,7 @@ footer p {
   }
   header {
     background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+    background-position: right bottom;
   }
   header .wrapper .mainTitle {
     top: 20vh;
@@ -640,7 +641,7 @@ footer p {
   header .topNav .dropMenu {
     position: absolute;
     display: inline-block;
-    right: 0px;
+    right: -20px;
     top: 10px;
     min-width: 100px;
     text-align: center;
@@ -657,7 +658,7 @@ footer p {
     z-index: 1;
   }
   header .topNav .dropMenu .dropMenuLinks a {
-    color: #ffffff;
+    color: #1d81cc;
     text-decoration: none;
     text-transform: capitalize;
     display: block;
@@ -699,14 +700,16 @@ footer p {
             flex-direction: column-reverse;
   }
   .smoothiesNewHome .smoothies img {
-    width: 111%;
+    width: 100%;
   }
   .smoothiesNewHome .smoothies .smoothieInfo {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4% 0%;
+    padding: 4% 5%;
+    margin-right: 0;
+    margin-left: 0;
   }
   .smoothiesNewHome .smoothies .smoothieInfo h2 {
     text-align: center;
@@ -727,14 +730,16 @@ footer p {
             flex-direction: column;
   }
   .smoothiesNewHome .newHome img {
-    width: 111%;
+    width: 100%;
   }
   .smoothiesNewHome .newHome .newHomeInfo {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4% 0%;
+    padding: 4% 5%;
+    margin-right: 0;
+    margin-left: 0;
   }
   .smoothiesNewHome .newHome .newHomeInfo h2 {
     text-align: center;
@@ -838,6 +843,12 @@ footer p {
     font-size: 0.8rem;
     line-height: 16px;
     margin: 0;
+  }
+  header .wrapper .dropMenu {
+    right: 0px;
+  }
+  header .wrapper .dropMenu .dropMenuLinks a {
+    color: #ffffff;
   }
   .contact p {
     font-size: 0.7rem;

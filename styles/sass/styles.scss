@@ -33,7 +33,6 @@ article {
     color: #1f2022;
 }
 .wrapper {
-    max-width:1600px;
     width:90%;
     margin:0 auto;
 }
@@ -43,7 +42,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position:relative;
     .topLinks {
         display:flex;
@@ -160,6 +158,7 @@ header {
             justify-content: space-between;
             align-items: baseline;
             width:50%;
+            margin-left:5%;
             padding-right: 5%;
             h2 {
                 width:75%;
@@ -193,6 +192,7 @@ header {
             justify-content: space-between;
             align-items:baseline;
             width:50%;
+            margin-right:5%;
             padding-left: 5%;
             h2 {
                 width:75%;
@@ -308,6 +308,7 @@ footer {
     }
     header {
         background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+        background-position: right bottom;
         .wrapper {
             .mainTitle {
                 top:20vh;
@@ -335,7 +336,7 @@ footer {
             .dropMenu {
                 position:absolute;
                 display: inline-block;
-                right:0px;
+                right:-20px;
                 top:10px;
                 min-width:100px;
                 text-align: center;
@@ -350,7 +351,7 @@ footer {
                     text-align:center;
                     z-index: 1;
                     a {
-                        color:#ffffff;
+                        color:#1d81cc;
                         text-decoration: none;
                         text-transform: capitalize;
                         display: block;
@@ -395,12 +396,14 @@ footer {
         .smoothies {
             flex-direction: column-reverse;
             img {
-                width: 111%;
+                width: 100%;
             }
             .smoothieInfo {
                 width:100%;
                 align-items: center;
-                padding: 4% 0%;
+                padding: 4% 5%;
+                margin-right: 0;
+                margin-left: 0;
                 h2 {
                     text-align: center;
                 }
@@ -418,12 +421,14 @@ footer {
         .newHome {
             flex-direction: column;
             img {
-                width: 111%;
+                width: 100%;
             }
             .newHomeInfo {
                 width:100%;
                 align-items: center;
-                padding: 4% 0%;
+                padding: 4% 5%;
+                margin-right: 0;
+                margin-left: 0;
                 h2 {
                     text-align: center;
                 }
@@ -515,6 +520,14 @@ footer {
                     line-height: 16px;
                     margin: 0;
                 }   
+            }
+            .dropMenu {
+                right: 0px;
+                .dropMenuLinks {
+                    a {
+                        color:#ffffff;
+                    }
+                }
             }
         }
     }
