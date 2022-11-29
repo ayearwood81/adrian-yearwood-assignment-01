@@ -651,7 +651,7 @@ footer p {
     color: #042259;
   }
   header .topNav .dropMenu .dropMenuLinks {
-    /* formatting and hiding the links */
+    /* formatting and hiding the drop menu links */
     display: none;
     position: relative;
     text-align: center;
@@ -670,6 +670,7 @@ footer p {
   .newsAppliances .appliancePics li {
     width: 45%;
     height: auto;
+    padding: 6% 0%;
   }
   .newsAppliances .appliancePics .toaster {
     display: none;
@@ -768,7 +769,7 @@ footer p {
     margin: 5% 0%;
   }
   .shopJobsEvents nav ul li a {
-    margin: 20% 0%;
+    margin: 5% 0%;
   }
   .contactOptions p {
     font-size: 0.9rem;

@@ -1,8 +1,9 @@
 @use 'setup';
-
+// setting base font size to 20px
 html {
     font-size: 125%;
 }
+// stripping styles
 body,
 section,
 ul,
@@ -32,10 +33,12 @@ article {
     font-family: 'Barlow', sans-serif;
     color: #1f2022;
 }
+// setting wrapper width
 .wrapper {
     width:90%;
     margin:0 auto;
 }
+// header styling begins
 header {
     background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt.png);
     height:100vh;
@@ -52,6 +55,7 @@ header {
             display:flex;
             justify-content: flex-end;
             li {
+                // making the links display horizontally instead of vertically
                 display:inline-block;
                 margin: 0 4%;
                 a {
@@ -64,9 +68,11 @@ header {
             }
         }
     }
+    // hiding the drop menu for the media query
     .dropMenu {
         display:none;
     }
+    // placing the social links
     aside {
         position:absolute;
         top:5%;
@@ -76,6 +82,7 @@ header {
         }
     }
     .wrapper {
+        // making the position of this wrapper relative so the title can be stuck to it
         position:relative;
         .mainTitle {
             position:absolute;
@@ -95,6 +102,7 @@ header {
         }
     }
 }
+// newsAppliance section styling begins
 .newsAppliances {
     background-color: #fcdde2;
     padding:1% 0%;
@@ -135,6 +143,7 @@ header {
                 margin: 2% 0%;
             }
         }
+        //styling the button
         button {
             background-color: #042259;
             color: #f0f5ff;
@@ -146,6 +155,7 @@ header {
         }
     }
 }
+// Smoothies / New Home section styling begins
 .smoothiesNewHome {
     background-color: #f0f5ff;
     height:auto;
@@ -218,6 +228,7 @@ header {
         }
     }
 }
+// Shop / Jobs / Events section styling begins
 .shopJobsEvents {
     background-color: #fcdde2;
     height:30vh;
@@ -246,6 +257,7 @@ header {
         }
     }
 }
+// Contact and Bottom Links Section styling begins
 .contactOptions {
     background-color: #f0f5ff;
     padding:3% 0%;
@@ -292,6 +304,7 @@ header {
         }
     }
 }
+// Footer Styling begins
 footer {
     background-color: #042259;
     text-align: center;
@@ -303,10 +316,12 @@ footer {
 }
 
 @media (max-width: 975px) {
+    // first media query, tablet / small screen-friendly
     h2 {
         font-size: 1.5rem;
     }
     header {
+        // changing the background picture to mobile friendly
         background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
         background-position: right bottom;
         .wrapper {
@@ -326,14 +341,18 @@ footer {
             }
         }
         aside {
+            // hiding social links
             display:none;
         }
+        // turning top menu into drop menu begins
         .topNav {
             position:relative;
             .topLinks {
+                // hiding top links
                 display:none;
             }
             .dropMenu {
+                // placing the dropmenu hamburger icon
                 position:absolute;
                 display: inline-block;
                 right:-20px;
@@ -345,7 +364,7 @@ footer {
                     color:#042259;
                 }
                 .dropMenuLinks {
-                    /* formatting and hiding the links */
+                    /* formatting and hiding the drop menu links */
                     display:none;
                     position: relative;
                     text-align:center;
@@ -372,14 +391,17 @@ footer {
             li {
                 width:45%;
                 height:auto;
+                padding: 6% 0%;
             }
             .toaster {
+                // hiding the middle picture
                 display:none;
             }
         }
     }
     .newsAppliances {
         .coffee {
+            // making this section display vertically
             flex-direction: column;
             img {
                 width:100%;
@@ -394,6 +416,7 @@ footer {
     .smoothiesNewHome {
         background-color: #fcdde2;
         .smoothies {
+            // making this section display vertically with the image on top
             flex-direction: column-reverse;
             img {
                 width: 100%;
@@ -419,6 +442,7 @@ footer {
             }
         }
         .newHome {
+            // making the section display vertically
             flex-direction: column;
             img {
                 width: 100%;
@@ -450,11 +474,12 @@ footer {
         background-color: #f5c8cf;
         nav {
             ul {
+                // making the icons and links display vertically
                 flex-direction: column;
                 li {
                     margin: 5% 0%;
                     a{
-                        margin:20% 0%;
+                        margin:5% 0%;
                     }
                 }
             }
@@ -465,6 +490,7 @@ footer {
             font-size: 0.9rem;
         }
         .bottomFlex {
+            // making this section display vertically
             flex-direction: column;
             align-items: center;
             position:relative;
@@ -491,11 +517,13 @@ footer {
                 }
             }
             .contact {
+                // making the contact info display in line with the bottom links
                 position:absolute;
                 bottom:2%;
                 left:0;
             }
             .bottomLinks {
+                // placing the links on the right side of the screen
                 align-self: flex-end;
                 margin: 2% 0%;
             }
@@ -507,6 +535,7 @@ footer {
 }
 
 @media (max-width:500px) {
+    // smallest screen width, works down to 320px screen width
     header {
         .wrapper {
             .mainTitle {
