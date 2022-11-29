@@ -268,7 +268,7 @@ article {
 }
 
 header {
-  background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt.png);
+  background-image: url(../../assets/header-alt.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -611,7 +611,7 @@ footer p {
     font-size: 1.5rem;
   }
   header {
-    background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+    background-image: url(../../assets/header-alt-mobile.png);
     background-position: right bottom;
   }
   header .wrapper .mainTitle {

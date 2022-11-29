@@ -40,7 +40,7 @@ article {
 }
 // header styling begins
 header {
-    background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt.png);
+    background-image: url(../../assets/header-alt.png);
     height:100vh;
     background-size: cover;
     background-position: center;
@@ -322,7 +322,7 @@ footer {
     }
     header {
         // changing the background picture to mobile friendly
-        background-image: url(/c:/Users/Adrian/Desktop/juno/Bootcamp/Assignments/adrianYearwoodAssignment1/assets/header-alt-mobile.png);
+        background-image: url(../../assets/header-alt-mobile.png);
         background-position: right bottom;
         .wrapper {
             .mainTitle {
